@@ -8,15 +8,19 @@ import { ServersComponent } from './servers/servers.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+   
+
    ],
+
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
 
   ],
   providers: [],

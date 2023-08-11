@@ -1,20 +1,5 @@
-<label>Server Name</label>
-<!-- <input 
- type="text"
-class="form-control"
-(input)="onUpdateServerName($event)">  -->
-<!-- binding using the dollar Sign event which takes in the input data from user and helps output it through string interpolaton-->
-<input
-type="text"
-class="from-control"
-[(ngModel)]="serverName">
-<!-- <p>{{ serverName }}</p> -->
-<button
- class="btn btn-primary"
- [disabled]="!allowNewServer"
- (click)="onCreateServer()">Add Server</button>
- <!-- <p [innerText]="allowNewServer"></p> -->
- <!-- <p>{{ serverCreationStatus }}</p> -->
-<p *ngIf="serverCreated">Server was created, server name is {{ serverName }}</p>
-<app-server *ngFor="let server of servers"></app-server>
-
+<button 
+class="btn btn-primary"
+disabled>Add Server</button>
+<app-server></app-server>
+<app-server></app-server>
