@@ -2,21 +2,33 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { PricingComponent } from './pricing/pricing.component';
 import { HeaderComponent } from './header/header.component';
-import { FrontpageComponent } from './frontpage/frontpage.component';
-import { PricespageComponent } from './pricespage/pricespage.component';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './footer/footer.component';
+import { AccountComponent } from './home/account/account.component';
+import { HomeStartComponent } from './home/home-start/home-start.component';
+import { DrowpdownDirective } from './shared/dropdown.directives';
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    PricingComponent,
     HeaderComponent,
-    FrontpageComponent,
-    PricespageComponent,
-    FooterComponent
+    HomeComponent,
+    FooterComponent,
+    AccountComponent,
+    HomeStartComponent,
+    DrowpdownDirective
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

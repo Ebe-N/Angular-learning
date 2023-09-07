@@ -1,14 +1,5 @@
-<app-header (selectedComponent)="implementComponent($event)"></app-header>
-     
-            <app-frontpage *ngIf="loadedFeature === 'home'"></app-frontpage>
-
-            <app-pricespage *ngIf="loadedFeature !== 'home'"></app-pricespage>
-            
-         
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer>   
 
 
-
-
-
-       <!-- [images]="images"
-          [autoSlide]="true" -->
